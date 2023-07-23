@@ -1,6 +1,9 @@
 import React from "react";
-export function Footer(){
-    return (
-        <footer className="footer">{new Date().toLocaleTimeString()} we're currently open.</footer>
-    )
+import { Order } from "./Order";
+export function Footer() {
+    const hour = new Date().getHours();
+    const openHour = 12;
+    const closeHour = 22;
+    const isOpen = hour >= openHour && hour <= closeHour;
+    return <footer className="footer">{isOpen && <Order closeHour={closeHour}/>}</footer>;
 }
