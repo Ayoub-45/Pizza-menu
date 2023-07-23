@@ -1,8 +1,8 @@
 import React from "react"
 export function Header(){
     return (
-        <div>
+        <header className="header">
             <h1>Fast React Pizza Co. </h1>
-        </div>
+        </header>
     )
 }
