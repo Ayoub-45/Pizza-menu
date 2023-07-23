@@ -1,9 +1,13 @@
 import React from "react";
-import { Pizza } from "./Pizza";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
+import { Menu } from "./Menu";
 export function App() {
     return (
         <div>
-            <Pizza />
+            <Header/>
+            <Menu/>
+            <Footer/>
         </div>
     );
 }

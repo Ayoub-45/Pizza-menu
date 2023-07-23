@@ -1,6 +1,5 @@
 import React from "react";
-import { pizzaData } from "../data";
-export function Pizza(props) {
+export function Pizza() {
     return (
         <div>
             <h2>Pizza</h2>
