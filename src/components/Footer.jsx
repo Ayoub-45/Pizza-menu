@@ -5,5 +5,5 @@ export function Footer() {
     const openHour = 12;
     const closeHour = 22;
     const isOpen = hour >= openHour && hour <= closeHour;
-    return <footer className="footer">{isOpen && <Order closeHour={closeHour}/>}</footer>;
+    return <footer className="footer">{isOpen && <Order closeHour={closeHour} openHour={openHour}/>}</footer>;
 }

@@ -1,13 +1,12 @@
 import React from "react";
-export function Pizza(props) {
-    if (props.soldOut) return null;
+export function Pizza({name,ingredients,price,soldOut,image}) {
     return (
-        <li className="pizza">
-            <img src={props.image} alt="Pizza" />
+        <li className={`pizza ${soldOut && "sold-out"}`}>
+            <img src={image} alt="Pizza" />
             <div>
-                <h3>{props.name}</h3>
-                <p>{props.ingredients}</p>
-                <p>{props.price}$</p>
+                <h3>{name}</h3>
+                <p>{ingredients}</p>
+                <span>{soldOut?"SOLD OUT":<span>{price}$</span>}</span>
             </div>
         </li>
     );

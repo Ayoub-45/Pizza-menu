@@ -1,9 +1,9 @@
 import React from "react"
-export function Order({closeHour}){
+export function Order({openHour,closeHour}){
     return (
         <div className="order">
         <p>
-            We're open until {closeHour}:00. Come visit us or order
+            We're open at {openHour}:00 until {closeHour}:00. Come visit us or order
             online.
         </p>
         <button className="btn">Order</button>
